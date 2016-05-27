@@ -1,0 +1,31 @@
+<html>
+<head>
+   
+</head>
+<body><script>
+var person = function() {
+	this.name = "mohit";};
+	
+person.prototype.nationality = "Indian "; 
+	
+
+	
+var student = function(){
+	    
+
+};
+
+student.prototype = Object.create(person.prototype);
+student.prototype.constructor = person;
+
+var i = new student();
+student.prototype.nationality = "American";
+
+console.log(i.nationality);
+
+
+
+</script>
+</body>
+
+</html>
